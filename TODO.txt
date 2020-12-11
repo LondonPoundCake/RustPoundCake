@@ -1,1 +1,4 @@
 A Simple TODO.txt Inside of here will be all of things in which i need to get done.
+
+What should be the steps in which we should do in order to push code to git.
+1.
