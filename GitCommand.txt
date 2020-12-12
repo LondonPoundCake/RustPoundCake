@@ -1,0 +1,21 @@
+A Simple GitCommand.txt 
+
+What should be the steps in which we should do in order to push code to git.
+[Commands]
+1. git add TODO.txt >> 
+2. git commit TODO.txt -m "Test Commit"
+3. git push -u origin master
+
+When you change a file which is already in the repo, you have to "git add" it again if you want it to be staged.
+
+This allows you to commit only a subset of changes you made since the last commit. For example let's say you have file a, file b and file c.
+You modify file a and file b but the changes are very different in nature and you dont want all of them to be in one single commit. You issue
+"git add a
+git commit a -m "bugfix, in a"
+git add b
+git commit b -m "new feature, in b" "
+
+As a side note, if you want to commit everything you can just type 
+"git commit -a "
+
+Src : https://stackoverflow.com/questions/21134960/what-does-changes-not-staged-for-commit-mean
