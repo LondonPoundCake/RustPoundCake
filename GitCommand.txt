@@ -19,3 +19,28 @@ As a side note, if you want to commit everything you can just type
 "git commit -a "
 
 Src : https://stackoverflow.com/questions/21134960/what-does-changes-not-staged-for-commit-mean
+
+
+Understanding Branches
+
+Q - Why should we create branches? 
+
+"Branching means you diverge from the main line of development and continue to do work without messing with that main line." 
+Src : https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+
+Steps / Commands to branch.
+
+1.git checkout -b dev
+    -> then make changes
+        -> commit changes git commit -a 
+            -> push changes git push -u origin <branch name>
+
+
+                      (
+                     (  ) (
+                      )    )
+         |||||||     (  ( (
+        ( O   O )        )
+ ____oOO___(_)___OOo____(
+(_______________________)
+           JOINT
