@@ -4,5 +4,6 @@ table! {
         title -> Varchar,
         comment -> Text,
         published -> Bool,
+        created -> Text,
     }
 }

@@ -32,7 +32,7 @@ fn print_todo(todo_obj : Todo)
     map.insert("ID",(todo_obj.id).to_string());
     map.insert("TITLE",todo_obj.title);
     map.insert("BODY",todo_obj.body);
-
+    map.insert("CREATED",todo_obj.created);
     println!("**********************************");
     for (key,val) in map.iter(){
         println!("{} => {}",key,val);
