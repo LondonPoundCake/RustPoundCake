@@ -8,11 +8,9 @@ extern crate dotenv;
 
 use diesel::prelude::*;
 use diesel::pg::PgConnection;
-use diesel::types::Timestamp;
 use dotenv::dotenv;
 
 use std::env;
-use std::time::SystemTime;
 
 pub fn establish_connection() -> PgConnection{
     dotenv().ok();

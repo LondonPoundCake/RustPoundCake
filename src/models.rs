@@ -1,5 +1,4 @@
 use super::schema::todo;
-use std::time::SystemTime;
 
 #[derive(Queryable)]
 pub struct Todo {
