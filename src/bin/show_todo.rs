@@ -1,3 +1,7 @@
+#![feature(proc_macro_hygiene,decl_macro)]
+
+#[macro_use] extern crate rocket;
+
 extern crate RustTODOproj;
 extern crate diesel;
 
@@ -7,6 +11,11 @@ use self::diesel::prelude::*;
 
 use std::collections::HashMap;
 
+
+#[get("/")]
+fn index() -> &'static str {
+    "Hello world!"
+}
 
 fn main (){
     use RustTODOproj::schema::todo::dsl::*;
@@ -24,6 +33,9 @@ fn main (){
     } else {
         println!("No post's ");
     }
+
+    rocket::ignite().mount("/",routes![index]).launch();
+
 }
 
 fn print_todo(todo_obj : Todo)
@@ -38,5 +50,8 @@ fn print_todo(todo_obj : Todo)
         println!("{} => {}",key,val);
     }
     println!("**********************************");
+
+
+
 
 }

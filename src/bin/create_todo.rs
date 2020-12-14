@@ -6,9 +6,6 @@ use std::io::{stdin,Read};
 
 use chrono::{Utc};
 
-
-
-
 fn todo_timestamp_func() -> String {
     let todo_date = Utc::now().to_string();
     return todo_date;
